@@ -1,1 +1,152 @@
-.inquiry-dialog{width:min(560px,calc(100% - 32px));max-height:calc(100% - 32px);padding:32px;border:1px solid #d9dcd4;background:#f4f5f1;color:#171914;box-shadow:0 24px 80px #11191440}.inquiry-dialog::backdrop{background:#1719149c;backdrop-filter:blur(3px)}.inquiry-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:20px}.inquiry-heading .eyebrow{margin-bottom:13px}.inquiry-heading h2{margin:0;font-size:31px;line-height:1.1;letter-spacing:-.8px}.inquiry-close{width:34px;height:34px;flex:0 0 34px;border:1px solid #d9dcd4;background:transparent;color:#171914;font-size:23px;line-height:1;cursor:pointer}.inquiry-close:hover{background:#e8ebe4}.inquiry-intro{max-width:390px;margin:13px 0 23px;color:#666b62;font-size:12px;line-height:1.7}.inquiry-form{display:grid;grid-template-columns:1fr 1fr;gap:15px}.inquiry-form label{display:grid;gap:7px;color:#33372f;font-size:11px;font-weight:700}.inquiry-form input,.inquiry-form select,.inquiry-form textarea{width:100%;min-height:42px;border:1px solid #cdd1c8;border-radius:0;background:#fff;color:#171914;padding:10px 11px;font:12px 'Manrope',sans-serif}.inquiry-form textarea{min-height:96px;resize:vertical}.inquiry-form input:focus,.inquiry-form select:focus,.inquiry-form textarea:focus{outline:2px solid #2453e6;outline-offset:1px}.optional-label{margin-left:5px;color:#8b9087;font:8px 'DM Mono',monospace}.inquiry-form .message-field{grid-column:1/-1}.form-note{grid-column:1/-1;margin:0;color:#777c72;font-size:10px;line-height:1.6}.inquiry-submit{grid-column:1/-1;justify-self:start;border:0;cursor:pointer}.inquiry-submit:focus-visible,.inquiry-close:focus-visible{outline:2px solid #2453e6;outline-offset:3px}@media(max-width:480px){.inquiry-dialog{padding:23px 19px}.inquiry-heading h2{font-size:26px}.inquiry-form{grid-template-columns:1fr;gap:13px}.inquiry-form .message-field,.form-note,.inquiry-submit{grid-column:auto}.inquiry-submit{justify-self:stretch;justify-content:space-between}}
+.inquiry-dialog {
+  width: min(560px, calc(100% - 32px));
+  max-height: calc(100% - 32px);
+  padding: 32px;
+  border: 1px solid #d9dcd4;
+  background: #f4f5f1;
+  color: #171914;
+  box-shadow: 0 24px 80px #11191440;
+}
+
+.inquiry-dialog::backdrop {
+  background: #1719149c;
+  backdrop-filter: blur(3px);
+}
+
+.inquiry-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.inquiry-heading .eyebrow {
+  margin-bottom: 13px;
+}
+
+.inquiry-heading h2 {
+  margin: 0;
+  font-size: 31px;
+  line-height: 1.1;
+  letter-spacing: -0.8px;
+}
+
+.inquiry-close {
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+  border: 1px solid #d9dcd4;
+  background: transparent;
+  color: #171914;
+  font-size: 23px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.inquiry-close:hover {
+  background: #e8ebe4;
+}
+
+.inquiry-intro {
+  max-width: 390px;
+  margin: 13px 0 23px;
+  color: #666b62;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.inquiry-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.inquiry-form label {
+  display: grid;
+  gap: 7px;
+  color: #33372f;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.inquiry-form input,
+.inquiry-form select,
+.inquiry-form textarea {
+  width: 100%;
+  min-height: 42px;
+  border: 1px solid #cdd1c8;
+  border-radius: 0;
+  background: #fff;
+  color: #171914;
+  padding: 10px 11px;
+  font: 12px "Manrope", sans-serif;
+}
+
+.inquiry-form textarea {
+  min-height: 96px;
+  resize: vertical;
+}
+
+.inquiry-form input:focus,
+.inquiry-form select:focus,
+.inquiry-form textarea:focus {
+  outline: 2px solid #2453e6;
+  outline-offset: 1px;
+}
+
+.optional-label {
+  margin-left: 5px;
+  color: #8b9087;
+  font: 8px "DM Mono", monospace;
+}
+
+.inquiry-form .message-field {
+  grid-column: 1 / -1;
+}
+
+.form-note {
+  grid-column: 1 / -1;
+  margin: 0;
+  color: #777c72;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.inquiry-submit {
+  grid-column: 1 / -1;
+  justify-self: start;
+  border: 0;
+  cursor: pointer;
+}
+
+.inquiry-submit:focus-visible,
+.inquiry-close:focus-visible {
+  outline: 2px solid #2453e6;
+  outline-offset: 3px;
+}
+
+@media (max-width: 480px) {
+  .inquiry-dialog {
+    padding: 23px 19px;
+  }
+
+  .inquiry-heading h2 {
+    font-size: 26px;
+  }
+
+  .inquiry-form {
+    grid-template-columns: 1fr;
+    gap: 13px;
+  }
+
+  .inquiry-form .message-field,
+  .form-note,
+  .inquiry-submit {
+    grid-column: auto;
+  }
+
+  .inquiry-submit {
+    justify-self: stretch;
+    justify-content: space-between;
+  }
+}

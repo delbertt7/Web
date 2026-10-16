@@ -1,0 +1,15 @@
+.founders-section{padding-top:96px;padding-bottom:102px}
+.founders-heading{display:flex;align-items:end;justify-content:space-between;gap:40px;margin-bottom:42px}
+.founders-heading .eyebrow{margin-bottom:22px}
+.founders-heading h2{font-size:clamp(44px,5vw,66px);line-height:1;letter-spacing:-2px;margin:0}
+.founders-heading h2 em{font-family:var(--serif);font-weight:600}
+.founders-heading>p{max-width:340px;margin:0 0 6px;color:#62675e;font-size:13px;line-height:1.8}
+.founder-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.founder-profile img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;object-position:center 38%;background:#e0e2dc;filter:saturate(.82)}
+.founder-meta{display:flex;justify-content:space-between;align-items:start;border-top:1px solid var(--line);padding-top:16px;margin-top:18px}
+.founder-meta h3{font-size:18px;margin:0 0 7px;font-weight:700}
+.founder-meta>span{font:10px var(--mono);color:var(--blue)}
+.founder-role{font:9px var(--mono);color:#767b71;margin:0;letter-spacing:.3px}
+.founder-bio{max-width:340px;margin:14px 0 0;color:#62675e;font-size:11px;line-height:1.8}
+.founders-note{margin:32px 0 0;color:#7c8177;font:9px var(--mono)}
+@media(max-width:640px){.founders-section{padding-top:76px;padding-bottom:78px}.founders-heading{display:block;margin-bottom:29px}.founders-heading h2{font-size:44px;letter-spacing:-1.7px}.founders-heading>p{font-size:12px;margin-top:18px}.founder-grid{grid-template-columns:1fr;gap:34px}.founder-profile img{aspect-ratio:5/3}.founder-bio{font-size:11px}}
